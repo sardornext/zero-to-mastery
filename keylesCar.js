@@ -12,17 +12,15 @@
 // IF they say they are over 18, respond with:
 // "Powering On. Enjoy the ride!"
 
-const age = prompt("What is your age?");
-     if (Number(age) < 18) {
-         alert("Sorry, you are too young to drive this car. Powering off");
-     }
-      else if (Number(age) === 18) {
-          alert("Congratulations on your first year of driving. Enjoy the ride!");
-      }
-      else if (Number(age) > 18) {
-          alert("Powering On. Enjoy the ride!");
-      }
-      else {
-          alert("Invalid input");
-      }
+var age = prompt("What is your age?");
+
+if (Number(age) < 18) {
+	alert("Sorry, you are too yound to drive this car. Powering off");
+} else if (Number(age) > 18) {
+	alert("Powering On. Enjoy the ride!");
+} else if (Number(age) === 18) {
+	alert("Congratulations on your first year of driving. Enjoy the ride!");
+} else {
+  alert("Please enter a number");
+}
     
